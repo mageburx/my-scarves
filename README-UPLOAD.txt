@@ -1,17 +1,13 @@
-MY SCARVES — PWA UI v2.0
+MY SCARVES v2.1 — CLOUD SYNC
 
-Para atualizar no GitHub Pages:
-1. Faça primeiro Exportar coleção na versão atual.
-2. Extraia este ZIP.
-3. No repositório mageburx/my-scarves, carregue/substitua:
-   - index.html
-   - manifest.webmanifest
-   - sw.js
-   - icon.svg
-   - .nojekyll
-   - pasta icons/
-4. Commit changes na branch main.
-5. Aguarde 1–3 minutos e abra https://mageburx.github.io/my-scarves/
-6. No iPhone, feche e reabra a app. Se a versão antiga persistir, remova a app do ecrã principal e volte a adicioná-la pelo Safari.
+1. Antes de atualizar, abre a app atual e usa "Exportar coleção".
+2. Configura o Supabase seguindo README-SUPABASE.md.
+3. Edita config.js com o Project URL e a Publishable key.
+4. No GitHub, substitui index.html, manifest.webmanifest, sw.js, icon.svg e a pasta icons.
+5. Carrega também config.js.
+6. Faz Commit changes na branch main.
+7. Espera o GitHub Pages publicar.
+8. No iPhone, abre a app → Definições → cria/inicia sessão → Sincronizar agora.
+9. No Windows, abre o mesmo URL, inicia sessão com a mesma conta e sincroniza.
 
-NOTA: esta versão usa a mesma IndexedDB "myscarves-v1" e a store "scarves" da versão anterior, para preservar os registos locais existentes no mesmo browser/origem.
+NUNCA coloques uma service_role key no config.js.
